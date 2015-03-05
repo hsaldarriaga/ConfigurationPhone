@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="ConfigurationPhone.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ConfigurationPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#FF6C919E" Loaded="Page_Loaded" >
+    <Canvas LayoutUpdated="Canvas_LayoutUpdated">
+        <Polygon x:Name="tri1" Fill="#FF4C7EEA" Points="0,0 0,400 400,0"/>
+        <Polygon x:Name="tri2" Fill="#FF87B4F5" Points="400,0 200,200 400,400"/>
+        <Polygon x:Name="tri3" Fill="#FF2B2BCD" Points="0,640 200,200 400,400"/>
+        <Polygon x:Name="tri4" Fill="#FF4987E0" Points="0,400 200,200 0,640"/>
+        <Polygon x:Name="tri5" Fill="#FF67B87D" Points="0,640 400,400 400,640"/>
+        <TextBlock x:Name="tex1" Canvas.Top="100" Canvas.Left="100">
+            Text Style Large FontSize
+        </TextBlock>
+        <TextBlock x:Name="tex2" Canvas.Top="200" Canvas.Left="300" > <!--Left = Width/2 + Width/4 -->
+            Text Style Medium FontSize
+        </TextBlock>
+        <TextBlock x:Name="tex3" Canvas.Top="420" Canvas.Left="200" FontSize="{StaticResource ContentControlFontSize}"> <!-- Top = (Width/2) + (Height - Width/2)/2 -->
+            Content Control FontSize
+        </TextBlock>
+        <TextBlock x:Name="tex4" Canvas.Top="420" Canvas.Left="0" > <!-- Top = Width/2 + (Height - Width/2)/2 -->
+            Text Style Small FontSize
+        </TextBlock>
+        <TextBlock x:Name="tex5" Canvas.Top="530" Canvas.Left="300" > <!-- Top = (Width/2 + (Height - Width/2)/2) + (Height - (Width/2 + (Height - Width/2)/2))/2 -->
+            Text Style Extra Large FontSize
+        </TextBlock>
+    </Canvas>
+    
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="{StaticResource TextStyleMediumFontSize}" />
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+</Page>
+<!-- 400 640-->
