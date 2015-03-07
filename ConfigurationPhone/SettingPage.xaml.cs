@@ -68,11 +68,6 @@ namespace ConfigurationPhone
             tx5.Text = setting.Values["medium"].ToString();
         }
 
-        /// <summary>
-        /// Se invoca cuando esta página se va a mostrar en un objeto Frame.
-        /// </summary>
-        /// <param name="e">Datos de evento que describen cómo se llegó a esta página.
-        /// Este parámetro se usa normalmente para configurar la página.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }

@@ -29,7 +29,6 @@
             Text Style Medium FontSize
         </TextBlock>
     </Canvas>
-    
     <Page.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="White" />

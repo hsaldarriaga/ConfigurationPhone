@@ -7,7 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="#FF6C919E">
-
     <Grid Background="#FF447FC7">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
