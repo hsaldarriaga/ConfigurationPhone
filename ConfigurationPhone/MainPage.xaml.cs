@@ -51,17 +51,21 @@ namespace ConfigurationPhone
             var setting = Windows.Storage.ApplicationData.Current.LocalSettings;
             if (setting.Values["large"] == null)
             {
-                setting.Values["large"] = Resources["TextStyleLargeFontSize"].ToString();
+                setting.Values["large"] = "Hernan";
                 setting.Values["medium"] = Resources["TextStyleMediumFontSize"].ToString();
-                setting.Values["control"] = Resources["ContentControlFontSize"].ToString();
+                setting.Values["control"] = 0;
                 setting.Values["small"] = Resources["TextStyleSmallFontSize"].ToString();
-                setting.Values["extra"] = Resources["TextStyleExtraLargeFontSize"].ToString();
+                setting.Values["extra"] = "20";
             }
             else
             {
-                tex1.FontSize = Convert.ToDouble(setting.Values["large"].ToString());
-                tex2.FontSize = Convert.ToDouble(setting.Values["extra"].ToString());
-                tex3.FontSize = Convert.ToDouble(setting.Values["control"].ToString());
+                tex1.Text = setting.Values["large"].ToString();
+                tex2.Text = setting.Values["extra"].ToString();
+                int value = int.Parse(setting.Values["control"].ToString());
+                if (value == 0)
+                    tex3.Text = "Hombre";
+                else
+                    tex3.Text = "Mujer";
                 tex4.FontSize = Convert.ToDouble(setting.Values["small"].ToString());
                 tex5.FontSize = Convert.ToDouble(setting.Values["medium"].ToString()); 
                 

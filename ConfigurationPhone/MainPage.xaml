@@ -14,13 +14,13 @@
         <Polygon x:Name="tri4" Fill="#FF4987E0" Points="0,400 200,200 0,640"/>
         <Polygon x:Name="tri5" Fill="#FF67B87D" Points="0,640 400,400 400,640"/>
         <TextBlock x:Name="tex1" Canvas.Top="100" Canvas.Left="100" Foreground="#FF66F058">
-            Text Style Large FontSize
+            Hernan
         </TextBlock>
         <TextBlock x:Name="tex2" Canvas.Top="200" Canvas.Left="300" Foreground="#FFA82E1B" > <!--Left = Width/2 + Width/4 -->
-            Text Style Extra Large FontSize
+            20
         </TextBlock>
         <TextBlock x:Name="tex3" Canvas.Top="420" Canvas.Left="200" Foreground="#FFFF4AE6"> <!-- Top = (Width/2) + (Height - Width/2)/2 -->
-            Content Control FontSize
+            Hombre
         </TextBlock>
         <TextBlock x:Name="tex4" Canvas.Top="420" Canvas.Left="0" > <!-- Top = Width/2 + (Height - Width/2)/2 -->
             Text Style Small FontSize

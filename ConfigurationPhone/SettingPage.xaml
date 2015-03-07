@@ -18,17 +18,20 @@
         </TextBlock>
         <StackPanel Grid.Row="1" Margin="10,10,10,10">
             <TextBlock Foreground="#FF66F058">
-                Text Style Large FontSize
+                Nombre de la Persona
             </TextBlock>
             <TextBox x:Name="tx1"  />
             <TextBlock Foreground="#FFA82E1B">
-                Text Style Extra Large FontSize
+                Edad
             </TextBlock>
             <TextBox x:Name="tx2" />
             <TextBlock Foreground="#FFFF4AE6">
-                Content Control FontSize
+                Hombre
             </TextBlock>
-            <TextBox x:Name="tx3" />
+            <ComboBox  x:Name="tx3">
+                <ComboBoxItem IsSelected="True">Hombre</ComboBoxItem>
+                <ComboBoxItem>Mujer</ComboBoxItem>
+            </ComboBox>
             <TextBlock>
                 Text Style Small FontSize
             </TextBlock>

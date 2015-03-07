@@ -39,8 +39,7 @@ namespace ConfigurationPhone
                     setting.Values["large"] = tx1.Text;
                 if (tx2.Text != "")
                     setting.Values["extra"] = tx2.Text;
-                if (tx3.Text != "")
-                    setting.Values["control"] = tx3.Text;
+                setting.Values["control"] = tx3.SelectedIndex;
                 if (tx4.Text != "")
                     setting.Values["small"] = tx4.Text;
                 if (tx5.Text != "")
@@ -64,7 +63,7 @@ namespace ConfigurationPhone
             var setting = Windows.Storage.ApplicationData.Current.LocalSettings;
             tx1.Text = setting.Values["large"].ToString();
             tx2.Text = setting.Values["extra"].ToString();
-            tx3.Text = setting.Values["control"].ToString();
+            tx3.SelectedIndex = int.Parse(setting.Values["control"].ToString());
             tx4.Text = setting.Values["small"].ToString();
             tx5.Text = setting.Values["medium"].ToString();
         }
@@ -80,11 +79,11 @@ namespace ConfigurationPhone
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            tx1.Text = Resources["TextStyleLargeFontSize"].ToString();
+            tx1.Text = "Hernan";
             tx5.Text = Resources["TextStyleMediumFontSize"].ToString();
-            tx3.Text = Resources["ContentControlFontSize"].ToString();
+            tx3.SelectedIndex = 0;
             tx4.Text = Resources["TextStyleSmallFontSize"].ToString();
-            tx2.Text = Resources["TextStyleExtraLargeFontSize"].ToString();
+            tx2.Text = "20";
         }
     }
 }
